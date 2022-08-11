@@ -1,5 +1,5 @@
 import Cliente from "../core/Cliente"
-import {IconeLixo, IconeEdicao} from "../components/icones"
+import {IconeLixo, IconeEdicao} from "./Icones"
 
 interface TabelaProps {
     clientes: Cliente[]
