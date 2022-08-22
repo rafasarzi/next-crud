@@ -4,12 +4,10 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   safeList: [
-    {
-      pattern: /from-(green|blue|gray)-400/,
-    },
-    {
-      pattern: /to-(green|blue|gray)-700/,
-    },
+    /^bg-/,
+    /^from-/,
+    /^to-/,
+    /bg-gradient/
   ],
   theme: {
     extend: {},
