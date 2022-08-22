@@ -34,9 +34,13 @@ export default function useClientes(){
 
   }
   async function salvarCliente(cliente: Cliente){
+    if(cliente.nome && cliente.idade){
     await repo.salvar(cliente)
-    obterTodos()
+    obterTodos()   
+    }else
+    alert('nome e/ou idade não informados');
   }
+ 
   function novoCliente(){
     setClinte(Cliente.vazio())
     exibirForm()
